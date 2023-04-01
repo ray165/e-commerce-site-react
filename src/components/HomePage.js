@@ -9,12 +9,13 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import BreedingImage from "../images/combo.png";
-import OpenSeaIcon from "../images/opensea.png";
-import ApesImg from "../images/apenoki.png";
-import KrisImg from "../images/krisnoki.png";
-import SpoonsImg from "../images/spoonoki.png";
+import BreedingImage from "../img/combo.png";
+import OpenSeaIcon from "../img/opensea.png";
+import ApesImg from "../img/apenoki.png";
+import KrisImg from "../img/krisnoki.png";
+import SpoonsImg from "../img/spoonoki.png";
 import Form from 'react-bootstrap/Form';
+import ContactForm from "./ContactForm";
 
 
 const HomePage = () => {
@@ -327,6 +328,8 @@ const HomePage = () => {
           </div>
         </div>
       </div>
+
+      <ContactForm />
     </>
   );
 };

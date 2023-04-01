@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@aws-amplify/ui-react": "^4.4.3",
+    "aos": "^2.3.4",
     "aws-amplify": "^5.0.23",
     "bootstrap": "^4.6.2",
     "react": "^18.2.0",
@@ -11,6 +12,7 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^5.0.1",
     "react-scripts": "^5.0.1",
+    "react-vertical-timeline-component": "^3.6.0",
     "styled-components": "^4.3.2"
   },
   "scripts": {
