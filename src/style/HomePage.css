@@ -218,7 +218,7 @@ li {
 
 #about-bg {
     -webkit-clip-path: polygon(0 14%, 100% 0, 100% 100%, 0% 100%);
-    clip-path: polygon(0 14%, 100% 0, 100% 86%, 0% 100%);
+    /* clip-path: polygon(0 14%, 100% 0, 100% 86%, 0% 100%); */
 
     background-color: var(--solid);
     height: 80vh !important;
@@ -229,8 +229,8 @@ li {
 /************** GROW PAGE **************/
 
 #grow-bg {
-    -webkit-clip-path: polygon(0 14%, 100% 0, 100% 100%, 0% 100%);
-    clip-path: polygon(0 14%, 100% 0, 100% 86%, 0% 100%);
+    /* -webkit-clip-path: polygon(0 14%, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(0 14%, 100% 0, 100% 86%, 0% 100%); */
     background-color: var(--light);
     height: 80vh;
 }
@@ -243,7 +243,7 @@ li {
 /************** TIMELINE PAGE **************/
 
 #roadmap-bg {
-    -webkit-clip-path: polygon(0 0, 100% 13%, 100% 100%, 0 89%);
+    /* -webkit-clip-path: polygon(0 0, 100% 13%, 100% 100%, 0 89%); */
     background-color: var(--solid);
     height: 80vh;
 }

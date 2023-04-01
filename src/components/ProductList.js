@@ -14,9 +14,9 @@ Amplify.configure(awsExports);
 const ProductList = ({ signOut, user }) => {
   return (
     <>
-      <div className="py-5">
+      <div className="py-5" style={{backgroundColor: '#FF6363'}}>
         <div className="container">
-          <Title name="our" title="products" />
+          <Title title="fun guy merch" style={{ title: {color: 'red'} }}/>
           <div className="row">
             <ProductConsumer>
               {(value) => {
