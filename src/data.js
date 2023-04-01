@@ -7,7 +7,7 @@ export const storeProducts = [
   {
     id: 1,
     title: "Limited Edition Enoki with Glitter",
-    img: "img/apenoki.png",
+    img: "img/shirt-1-min.png",
     price: 69,
     company: "Jokey Enoki",
     info:
@@ -19,7 +19,7 @@ export const storeProducts = [
   {
     id: 2,
     title: "Zen of Kris",
-    img: "img/product-2.png",
+    img: "img/shirt-2-min.png",
     price: 100,
     company: "Jokey Enoki",
     info:
@@ -31,7 +31,7 @@ export const storeProducts = [
   {
     id: 3,
     title: "Artistic Rendition of Art",
-    img: "img/shirt-3.png",
+    img: "img/shirt-3-min.png",
     price: 1000,
     company: "Jokey Enoki",
     info:
