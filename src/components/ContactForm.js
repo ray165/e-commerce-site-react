@@ -5,6 +5,7 @@ import Button from "react-bootstrap/Button";
 import "aos/dist/aos.css";
 import "react-vertical-timeline-component/style.min.css";
 import Form from 'react-bootstrap/Form';
+import Amplify, {API, Auth} from 'aws-amplify'
 
 function ContactForm() {
     const [formData, setFormData] = useState({
@@ -18,14 +19,38 @@ function ContactForm() {
         setFormData({...formData, [name]: value});
     }
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
+
+        const myInit = {
+            body: {formData}, // replace this with attributes you need
+            headers: {
+                "Content-Type": "application/json",
+                'Access-Control-Allow-Origin': '*',
+                'Access-Control-Allow-Headers': '*',
+            },
+          };
+
+        // console.log("button click for handle submit, data: ", formData)
+        // const data = await API.get('contactform', '/contact', JSON.stringify(formData))
+        // console.log("data: ", data)
+
+        // API.post('contactform', '/contact', myInit)
+        //     .then((response) => {
+        //         // Add your code here
+        //         console.log("success: ", response)
+        //     })
+        //     .catch((error) => {
+        //         console.error("something went wrong", error.response);
+        //     });
 
         fetch("https://vpsiokmh72.execute-api.us-west-1.amazonaws.com/dev/contact", {
             mode: "no-cors",
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
+                'Access-Control-Allow-Origin': '*',
+                'Access-Control-Allow-Headers': '*',
             },
             body: JSON.stringify(formData),
         })
@@ -40,6 +65,7 @@ function ContactForm() {
             // handle error
             console.error("Problem submitting form", error)
         });
+
     };
 
     return (
