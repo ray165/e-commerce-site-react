@@ -7,7 +7,7 @@ const ses = new AWS.SES({ region: 'us-west-1' });
 exports.handler = async (event) => {
   console.log("CHECKER EVENT: ", event)
   console.log("CHECKER BODY: ", event.body)
-  const { name, email, message } = event.body;
+  const { name, email, message } = event;
   const params = {
     Destination: {
       ToAddresses: ['42cosmic@gmail.com']
