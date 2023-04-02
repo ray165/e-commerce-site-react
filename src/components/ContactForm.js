@@ -10,7 +10,7 @@ function ContactForm() {
     const [formData, setFormData] = useState({
         name: "",
         email: "", 
-        preference: ""
+        message: ""
     })
 
     const handleChange = (e) => {
@@ -21,7 +21,7 @@ function ContactForm() {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        fetch("https://26pokx33r4.execute-api.us-west-2.amazonaws.com/sendEmail", {
+        fetch("https://vpsiokmh72.execute-api.us-west-1.amazonaws.com/dev/contact", {
             mode: "no-cors",
             method: "POST",
             headers: {
@@ -72,8 +72,8 @@ function ContactForm() {
                         </Form.Group>
 
                         <Form.Group className="mb-3 text-white" controlId="exampleForm.ControlTextarea1">
-                        <Form.Label>Indicate your style preference:</Form.Label>
-                        <Form.Control as="textarea" rows={3} placeholder="Tell us about your unique style, what theme vibes with you, what makes you roll etc..." name="preference" value={formData.preference} onChange={handleChange}/>
+                        <Form.Label>Indicate your style message:</Form.Label>
+                        <Form.Control as="textarea" rows={3} placeholder="Tell us about your unique style, what theme vibes with you, what makes you roll etc..." name="message" value={formData.message} onChange={handleChange}/>
                         </Form.Group>
 
                         <br></br>

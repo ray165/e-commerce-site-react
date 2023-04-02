@@ -14,6 +14,15 @@
     "categories": {
       "auth": {
         "ecommercesitereact73fd64f5": {}
+      },
+      "function": {
+        "ecommercesitereactc4e5c4be": {
+          "deploymentBucketName": "amplify-ecommercesitereact-dev-103105-deployment",
+          "s3Key": "amplify-builds/ecommercesitereactc4e5c4be-326a533031375a335a75-build.zip"
+        }
+      },
+      "api": {
+        "contactform": {}
       }
     }
   }
