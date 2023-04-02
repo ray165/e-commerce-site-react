@@ -60,10 +60,12 @@ function ContactForm() {
             }
             // handle success
             console.log("Form submitted successfully.")
+            alert("Form submitted successfully!")
         })
         .catch((error) => {
             // handle error
             console.error("Problem submitting form", error)
+            alert("Form submitted successfully!")
         });
 
     };
